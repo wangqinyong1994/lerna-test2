@@ -1,6 +1,9 @@
 {
-  "name": "root",
   "private": true,
+  "workspaces": [
+    "packages/ttemplate-1/*",
+    "packages/tui-1/*"
+  ],
   "devDependencies": {
     "lerna": "^3.22.1"
   }
