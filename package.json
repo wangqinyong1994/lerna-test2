@@ -1,5 +1,6 @@
 {
-  "private": true,
+  "name": "t-material",
+  "version": "0.0.1",
   "workspaces": [
     "packages/ttemplate-1/*",
     "packages/tui-1/*"
