@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/*"
+    "packages/ttemplate-1",
+    "packages/tui-1"
   ],
   "version": "0.0.2"
 }
