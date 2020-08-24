@@ -1,6 +1,7 @@
 {
-  "name": "tui-1",
-  "version": "0.0.4",
+  "private": true,
+  "name": "@t-material/tui-1",
+  "version": "0.0.1",
   "description": "tui-1 ui组件库",
   "files": [
     "dist",
@@ -62,6 +63,5 @@
     "rxjs": "^6.5.5",
     "typescript": "^3.8.3",
     "typings-tester": "^0.3.2"
-  },
-  "gitHead": "71acb54fc09a52b5803ec09cb34801c0aec898f2"
+  }
 }

@@ -1,10 +1,11 @@
 {
-  "name": "t-material",
-  "version": "0.0.3",
   "workspaces": [
     "packages/ttemplate-1/*",
     "packages/tui-1/*"
   ],
+  "name": "t-material",
+  "version": "0.0.4",
+  "license": "MIT",
   "devDependencies": {
     "lerna": "^3.22.1"
   }

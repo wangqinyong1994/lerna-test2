@@ -1,13 +1,6 @@
 0 silly argv { _: [ 'bootstrap' ], lernaVersion: '3.22.1', '$0': 'lerna' }
 1 notice cli v3.22.1
 2 verbose rootPath /Users/wangqinyong/Desktop/demospace/gaoji/lernatest/lerna-repo-1
-3 error Error: Invalid package name "t-material/tui-1": name can only contain URL-friendly characters
-3 error     at invalidPackageName (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:86:15)
-3 error     at Result.setName (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:121:11)
-3 error     at new Result (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:111:23)
-3 error     at Function.resolve (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:58:15)
-3 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:61:30
-3 error     at Array.forEach (<anonymous>)
-3 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:55:38
-3 error     at Map.forEach (<anonymous>)
-3 error     at new PackageGraph (/usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:44:10)
+3 error JSONError: Unexpected token } in JSON at position 1884 while parsing near '...ter": "^0.3.2"  },}' in packages/tui-1/package.json
+3 error     at module.exports (/usr/local/lib/node_modules/lerna/node_modules/parse-json/index.js:26:19)
+3 error     at parse (/usr/local/lib/node_modules/lerna/node_modules/load-json-file/index.js:15:9)
