@@ -4,7 +4,7 @@
     "packages/tui-1/*"
   ],
   "name": "t-material",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^3.22.1"

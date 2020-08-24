@@ -3,10 +3,9 @@ import { Button } from "antd-mobile";
 import { ButtonPropsType } from 'antd-mobile/es/button/PropsType';
 
 interface AButtonProps extends ButtonPropsType {
-    text: string | React.ReactNode;
 }
-const AButton: React.FC<AButtonProps> = ({ text, ...rest }) => {
-    return (<Button {...rest}>{text}</Button>);
+const AButton: React.FC<AButtonProps> = ({ children, ...rest }) => {
+    return (<Button {...rest}>{children}</Button>);
 };
 
 export default AButton;

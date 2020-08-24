@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { AButton } from 't-material/packages/tui-1';
+import { AButton } from 'tui-1';
 import classnames from 'classnames/bind';
 
 import styles from './index.less';
