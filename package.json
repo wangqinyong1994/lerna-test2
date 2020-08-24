@@ -1,6 +1,6 @@
 {
   "name": "t-material",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "workspaces": [
     "packages/ttemplate-1/*",
     "packages/tui-1/*"

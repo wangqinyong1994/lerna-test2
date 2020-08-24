@@ -2,7 +2,13 @@
   "name": "tui-1",
   "version": "0.0.3",
   "description": "tui-1 ui组件库",
-  "main": "index.js",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "main": "lib/tui1.js",
+  "module": "es/tui1.js",
   "scripts": {
     "build": "rollup -c"
   },
