@@ -1,6 +1,5 @@
 {
-  "private": true,
-  "name": "@t-material/tui-1",
+  "name": "tui-1",
   "version": "0.0.6",
   "description": "tui-1 ui组件库",
   "files": [
@@ -63,5 +62,8 @@
     "rxjs": "^6.5.5",
     "typescript": "^3.8.3",
     "typings-tester": "^0.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

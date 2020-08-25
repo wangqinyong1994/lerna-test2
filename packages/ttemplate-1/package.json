@@ -79,5 +79,8 @@
     "stylelint": "^13.3.0",
     "typescript": "^3.8.3",
     "vconsole": "^3.3.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

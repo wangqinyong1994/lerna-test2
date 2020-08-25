@@ -1,10 +1,10 @@
 {
+  "private": true,
   "workspaces": [
-    "packages/ttemplate-1/*",
-    "packages/tui-1/*"
+    "packages/*"
   ],
   "name": "t-material",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^3.22.1"
