@@ -3,7 +3,7 @@
     "packages/*"
   ],
   "name": "t-material",
-  "version": "0.0.0",
+  "version": "0.0.12",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^3.22.1"
