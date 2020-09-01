@@ -1,14 +1,14 @@
 {
-  "name": "tui-1",
-  "version": "0.0.7",
-  "description": "tui-1 ui组件库",
+  "name": "@t-material/tui-2",
+  "version": "0.0.1",
+  "description": "tui-2 ui组件库",
   "files": [
     "dist",
     "lib",
     "es"
   ],
-  "main": "lib/tui1.js",
-  "module": "es/tui1.js",
+  "main": "lib/tui2.js",
+  "module": "es/tui2.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c --watch"

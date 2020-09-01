@@ -7,11 +7,11 @@ import styles from './index.less';
 
 const cx = classnames.bind(styles);
 
-interface IndexProps {}
+interface IndexProps { }
 
 const Index: React.FC<IndexProps> = () => (
   <div className={cx('index-wrap')}>
-    <AButton type="primary" text="primary"></AButton>
+    <AButton type="primary">primary</AButton>
   </div>
 );
 
