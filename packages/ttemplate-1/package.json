@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "template-umi",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "config": {
     "tq_alpha": "alpha",
     "tq_beta": "beta",
@@ -60,7 +60,7 @@
     "react-sticky": "^6.0.3",
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
-    "tui-1": "^0.0.8",
+    "tui-1": "^0.0.9",
     "umi": "^3.0.14",
     "umi-request": "^1.2.19",
     "yorkie": "^2.0.0"
