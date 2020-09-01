@@ -1,6 +1,6 @@
 {
   "name": "tui-1",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "tui-1 ui组件库",
   "files": [
     "dist",

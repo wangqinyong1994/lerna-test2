@@ -1,6 +1,6 @@
 {
   "name": "@t-material/tui-2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "tui-2 ui组件库",
   "files": [
     "dist",
