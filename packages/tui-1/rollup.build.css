@@ -1,0 +1,29 @@
+.tui-switch-item {
+  font-size: 28px;
+  color: #303133;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 112px;
+  border-bottom: 1px solid #e6e7eb;
+  background-color: #fff;
+}
+.tui-switch-item .title {
+  margin-left: 32px;
+}
+.tui-switch-item :global(.am-switch .checkbox) {
+  width: 78px;
+  height: 32px;
+  margin-right: 32px;
+}
+.tui-switch-item :global(.am-switch .checkbox)::after {
+  width: 40px;
+  height: 40px;
+  top: -4px;
+}
+.tui-switch-item :global(.am-switch .checkbox:after) {
+  left: 0;
+}
+.tui-switch-item :global(.am-switch .checkbox:before) {
+  width: auto;
+}

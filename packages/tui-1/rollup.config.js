@@ -2,6 +2,8 @@ import nodeResolve from '@rollup/plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import replace from '@rollup/plugin-replace'
 import typescript from 'rollup-plugin-typescript2'
+import less from 'rollup-plugin-less'
+import image from '@rollup/plugin-image'
 import {
   terser
 } from 'rollup-plugin-terser'
@@ -31,7 +33,7 @@ const makeExternalPredicate = (externalArr) => {
 export default [
   // CommonJS
   {
-    input: 'components/index.ts',
+    input: 'src/index.ts',
     output: {
       file: 'lib/tui1.js',
       format: 'cjs',
@@ -42,6 +44,9 @@ export default [
       ...Object.keys(pkg.peerDependencies || {}),
     ]),
     plugins: [
+      less({
+        insert: true
+      }),
       nodeResolve({
         extensions,
       }),
@@ -57,12 +62,13 @@ export default [
         ],
         runtimeHelpers: true,
       }),
+      image(),
     ],
   },
 
   // ES
   {
-    input: 'components/index.ts',
+    input: 'src/index.ts',
     output: {
       file: 'es/tui1.js',
       format: 'es',
@@ -73,6 +79,9 @@ export default [
       ...Object.keys(pkg.peerDependencies || {}),
     ]),
     plugins: [
+      less({
+        insert: true
+      }),
       nodeResolve({
         extensions,
       }),
@@ -92,12 +101,13 @@ export default [
         ],
         runtimeHelpers: true,
       }),
+      image(),
     ],
   },
 
   // ES for Browsers
   {
-    input: 'components/index.ts',
+    input: 'src/index.ts',
     output: {
       file: 'es/tui1.mjs',
       format: 'es',
@@ -108,6 +118,9 @@ export default [
       ...Object.keys(pkg.peerDependencies || {}),
     ]),
     plugins: [
+      less({
+        insert: true
+      }),
       nodeResolve({
         extensions,
       }),
@@ -129,12 +142,13 @@ export default [
           warnings: false,
         },
       }),
+      image(),
     ],
   },
 
   // UMD Development
   {
-    input: 'components/index.ts',
+    input: 'src/index.ts',
     output: {
       file: 'dist/tui1.js',
       format: 'umd',
@@ -150,6 +164,9 @@ export default [
       ...Object.keys(pkg.peerDependencies || {}),
     ]),
     plugins: [
+      less({
+        insert: true
+      }),
       nodeResolve({
         extensions,
       }),
@@ -163,12 +180,13 @@ export default [
       replace({
         'process.env.NODE_ENV': JSON.stringify('development'),
       }),
+      image(),
     ],
   },
 
   // UMD Production
   {
-    input: 'components/index.ts',
+    input: 'src/index.ts',
     output: {
       file: 'dist/tui1.min.js',
       format: 'umd',
@@ -184,6 +202,9 @@ export default [
       ...Object.keys(pkg.peerDependencies || {}),
     ]),
     plugins: [
+      less({
+        insert: true
+      }),
       nodeResolve({
         extensions,
       }),
@@ -205,6 +226,7 @@ export default [
           warnings: false,
         },
       }),
+      image(),
     ],
   },
 ]

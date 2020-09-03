@@ -1,0 +1,41 @@
+@textAreaPrefixCls: tui-text-area;
+
+.@{textAreaPrefixCls} {
+  font-size: 28px;
+  color: #303133;
+  padding-left: 32px;
+
+  .remark-title {
+    margin-top: 32px;
+    color: #909399;
+  }
+
+  .remark {
+    font-size: 36px;
+    font-weight: 400;
+    color: #c0c4cc;
+
+    .am-list-item {
+      padding: 0;
+    }
+  }
+
+  .required {
+    color: #909399;
+
+    &::after {
+      content: '*';
+      color: #f22323;
+      margin-left: 4px;
+    }
+  }
+
+  .error {
+    font-size: 24px;
+    color: #f22323;
+  }
+
+  :global(textarea) {
+    color: #303133;
+  }
+}

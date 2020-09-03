@@ -1,0 +1,39 @@
+@imagePickerPrefixCls: tui-image-picker;
+
+.@{imagePickerPrefixCls}{
+  font-size: 28px;
+  color: #303133;
+  padding-left: 32px;
+
+  .remark-title {
+    margin-top: 32px;
+    color: #909399;
+  }
+
+  .required {
+    &::after {
+      content: '*';
+      color: #f22323;
+      margin-left: 4px;
+    }
+  }
+
+  .remark {
+    font-size: 36px;
+    font-weight: 400;
+    color: #c0c4cc;
+  }
+
+  .error {
+    font-size: 24px;
+    color: #f22323;
+  }
+
+  :global(textarea) {
+    color: #303133;
+  }
+
+  :global(.am-list-item) {
+    padding: 0;
+  }
+}
