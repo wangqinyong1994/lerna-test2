@@ -1,29 +1,51 @@
-.tui-switch-item {
-  font-size: 28px;
-  color: #303133;
+.tui-area-picker {
+  font-size: 32px;
+  font-weight: 400;
+}
+.tui-area-modal .modal-title {
+  padding: 0 32px;
+  height: 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 112px;
-  border-bottom: 1px solid #e6e7eb;
-  background-color: #fff;
+  color: #19191a;
 }
-.tui-switch-item .title {
-  margin-left: 32px;
+.tui-area-modal .modal-title .tool {
+  color: #4a7efe;
 }
-.tui-switch-item :global(.am-switch .checkbox) {
-  width: 78px;
-  height: 32px;
-  margin-right: 32px;
+.tui-area-modal .content {
+  font-size: 36px;
+  font-weight: 400;
+  color: #303133;
+  line-height: 36px;
+  padding: 0 32px 32px;
+  height: 500px;
+  overflow: auto;
 }
-.tui-switch-item :global(.am-switch .checkbox)::after {
-  width: 40px;
-  height: 40px;
-  top: -4px;
+.tui-area-modal .content :global(.am-activity-indicator) {
+  display: flex;
+  justify-content: center;
 }
-.tui-switch-item :global(.am-switch .checkbox:after) {
-  left: 0;
+.tui-area-modal .content .content-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 36px;
 }
-.tui-switch-item :global(.am-switch .checkbox:before) {
-  width: auto;
+.tui-area-modal .content .content-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 400;
+  color: #303133;
+  line-height: 36px;
+  margin-top: 36px;
+}
+.tui-area-modal .content .content-item.active {
+  color: #4a7efe;
+}
+.tui-area-modal .content .content-item img {
+  width: 28px;
+  height: 28px;
 }

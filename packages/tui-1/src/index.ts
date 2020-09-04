@@ -4,3 +4,4 @@ export { default as AInputItem } from './components/input-item';
 export { default as AImagePicker } from './common/image-picker';
 export { default as ATextArea } from './common/text-area';
 export { default as ASwitchItem } from './common/switch-item';
+export { default as AAreaPickerItem } from './common/area-picker-item';

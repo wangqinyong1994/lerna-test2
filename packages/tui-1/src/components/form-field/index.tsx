@@ -2,7 +2,7 @@ import React, { ReactElement, FormEvent, useMemo, useCallback } from 'react';
 import { Picker } from 'antd-mobile';
 import cx from 'classnames/bind';
 import { Noop, SinglePickerData } from '../../types';
-import IconRight from '../_assets/images/icon-right.png';
+import IconRight from '../_assets/images/icon_right.png';
 
 import './index.less';
 
