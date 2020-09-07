@@ -5,3 +5,6 @@ export { default as AImagePicker } from './common/image-picker';
 export { default as ATextArea } from './common/text-area';
 export { default as ASwitchItem } from './common/switch-item';
 export { default as AAreaPickerItem } from './common/area-picker-item';
+export { default as AChooseModalItem } from './common/choose-modal';
+export { default as AMultyFormModal } from './common/multy-form-modal';
+export { default as ACalendarFormItem } from './common/calendar-form-item';

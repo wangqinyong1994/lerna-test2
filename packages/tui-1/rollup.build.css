@@ -1,51 +1,17 @@
-.tui-area-picker {
-  font-size: 32px;
-  font-weight: 400;
-}
-.tui-area-modal .modal-title {
-  padding: 0 32px;
-  height: 96px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #19191a;
-}
-.tui-area-modal .modal-title .tool {
-  color: #4a7efe;
-}
-.tui-area-modal .content {
-  font-size: 36px;
-  font-weight: 400;
+.tui-calendar-form .text-dom {
+  display: block;
+  max-width: 590px;
+  height: 88px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 88px;
+  position: relative;
+  align-self: stretch;
+  padding-right: 30px;
+  overflow: hidden;
   color: #303133;
-  line-height: 36px;
-  padding: 0 32px 32px;
-  height: 500px;
-  overflow: auto;
-}
-.tui-area-modal .content :global(.am-activity-indicator) {
-  display: flex;
-  justify-content: center;
-}
-.tui-area-modal .content .content-title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 36px;
-}
-.tui-area-modal .content .content-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 36px;
   font-weight: 400;
-  color: #303133;
-  line-height: 36px;
-  margin-top: 36px;
 }
-.tui-area-modal .content .content-item.active {
-  color: #4a7efe;
-}
-.tui-area-modal .content .content-item img {
-  width: 28px;
-  height: 28px;
+.tui-calendar-form .text-dom.active {
+  color: #909399;
 }

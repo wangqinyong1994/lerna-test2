@@ -1,0 +1,22 @@
+@calendarFormPrefixCls: tui-calendar-form;
+
+.@{calendarFormPrefixCls} {
+  .text-dom {
+    display: block;
+    max-width: 590px;
+    height: 88px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 88px;
+    position: relative;
+    align-self: stretch;
+    padding-right: 30px;
+    overflow: hidden;
+    color: #303133;
+    font-weight: 400;
+
+    &.active {
+      color: #909399;
+    }
+  }
+}

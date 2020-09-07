@@ -53,11 +53,13 @@ const AreaPickerItem: React.FC<AreaPickerItemProps> = ({
       orgCodeStr += `${item.orgInternalCode};`
     })
     setFieldsValue({
-      [itemName]: {
-        orgNameStr: orgNameStr.slice(0, -1),
-        idStr: idStr.slice(0, -1),
-        orgCodeStr: orgCodeStr.slice(0, -1)
-      }
+      [itemName]: orgNameStr
+        ? {
+            orgNameStr: orgNameStr.slice(0, -1),
+            idStr: idStr.slice(0, -1),
+            orgCodeStr: orgCodeStr.slice(0, -1)
+          }
+        : undefined
     })
     if (lastLevel) {
       const isLastLevel = retArr[retArr.length - 1]?.orgLevel === lastLevel
@@ -72,7 +74,6 @@ const AreaPickerItem: React.FC<AreaPickerItemProps> = ({
 
   const renderPlaceValue = useMemo(() => {
     const value = getFieldValue(itemName)
-    console.log(75, value)
     if (value && value.orgNameStr) {
       const { orgNameStr } = value
       return orgNameStr ? orgNameStr.replaceAll(';', '-') : null

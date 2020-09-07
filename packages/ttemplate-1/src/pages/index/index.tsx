@@ -8,6 +8,9 @@ import {
   ATextArea,
   ASwitchItem,
   AAreaPickerItem,
+  AChooseModalItem,
+  AMultyFormModal,
+  ACalendarFormItem,
 } from 'tui-1';
 import { createForm, formShape } from 'rc-form';
 import { uploadAllFile } from '@/utils/index';
@@ -93,11 +96,45 @@ const Index: React.FC<IndexProps> = ({ form }) => {
       <ATextArea required form={form} count={100} />
       <ASwitchItem form={form} itemName="aaa" title="asas" required />
       <AAreaPickerItem
-        title="哈哈哈"
+        title="城市选择"
         form={form}
-        itemName="abc"
+        itemName="cityChoose"
         organizationListChild={() => {}}
         organizationGetRoot={() => {}}
+      />
+      <AChooseModalItem
+        form={form}
+        required
+        requiredTips="请选择选择弹窗"
+        title="选择弹窗"
+        fetchFn={() => Promise.resolve({ data: [] })}
+        modalTitle="选择弹窗123"
+      />
+      <AMultyFormModal
+        form={form}
+        itemName="multyform"
+        label="多选"
+        required
+        initPanes={Promise.resolve([
+          {
+            id: 1,
+            name: '1',
+          },
+          {
+            id: 2,
+            name: '2',
+          },
+          {
+            id: 3,
+            name: '3',
+          },
+        ])}
+      />
+      <ACalendarFormItem
+        form={form}
+        itemName="calendar"
+        label="时间段"
+        required
       />
       <AButton type="primary" onClick={submit}>
         primary
