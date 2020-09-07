@@ -67,7 +67,7 @@ const FormField: React.FunctionComponent<FormFieldProps> = ({
     ({ label, itemName, pickerData }) => {
       const isGrew = !!!renderPickerText(itemName, pickerData)
       return (
-        <div className={cx('text-dom', { 'text-dom-grew': isGrew })}>
+        <div className={cx('text-dom', { active: isGrew })}>
           {renderPickerText(itemName, pickerData) || `请选择${label}`}
         </div>
       )
